@@ -1,0 +1,31 @@
+id; Sigla; Aminoácido; códons;
+
+   ; Alanina; GCU, GCC, GCA, GCG;
+Arg; Arginina; CGU, CGC, CGA, CGG, AGA, AGC;
+Asn; Asparagina; AAU, AAC;
+Asp; Ácido Aspártico; GAU, GAC;
+Cys; Cisteína; UGU, UGC;
+Gln; Glutamina; CAA, CAG;
+Glu; Ácido Glutâmico; GAA, GAG;
+Gly; Glicina; GGU, GGC, GGA, GGG;
+His; Histidina; CAU, CAC;
+Ile; Isoleucina; AUU, AUC, AUA;
+Leu; Leucina; UUA, UUG;
+Lys; Lisina; AAA, AAG;
+Met; Metionina; AUG;
+Phe; Fenilalanina; UUU, UUC;
+Pro; Prolina; CCU, CCC, CCA, CCG;
+Ser; Serina; AGU, AGC, UCU, UCC, UCA, UCG;
+Thr; Treonina; ACU, ACC, ACA, ACG;
+   ; Triptofano; UGG;
+Tyr; Tirosina; UAU, UAC;
+Val; Valina; GUU, GUC, GUA, GUG;
+Stop ; UAA, UAG, UGA;
+
+//Condicionais 
+
+if Códon = (UGU || UGC) {
+console.log ("Aminoácido = Cys")
+} else if (UGG) {
+console.log ("Aminoácido = Trp")
+}
